@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fonts Google-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-10 logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo-big.png" alt="">
+                    </a>
+                </div>
+                <div class="col-xl-3 col-1 phone">
+                    <div class="desktop">
+                        <p class="phone_number">+38 (093) 190 25 99</p>
+                        <a class="recall" href="#">Заказать обратный звонок</a>
+                    </div>
+                    <div class="mobile">
+                        <a class="openphone" onclick="openPhone()">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                    <div class="sidepanel" id="myOpenphone">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closePhone()">&times;</a>
+                        <div class="msp_menu">
+                            <p>Контакты</p>
+                        </div>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </div>
+                </div>
+
+                <div class="col-xl-1 col-1 menu">
+                    <button class="openbtn" onclick="openNav()">
+                        <div class="top"></div>
+                        <div class="center"></div>
+                        <div class="down"></div>
+                    </button> 
+                </div>
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="msp_menu">
+                        <p>МЕНЮ</p>
+                    </div>
+                    <a href="#">Главная</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Наши работы</a>
+                    <a href="#">F.A.Q.</a>
+                    <a href="#">Самое полезное</a>
+                    <a href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+        <div class="horline"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="first_text">Для тех кто знает</p>
+                    <p class="sec_text">Цену времени и деньгам</p>
+                    <h1 class="slogan">Сайт визитка</h1>
+                </div>
+                <div class="col-12 get_consultation">
+                    <a href="#" class="get_cons_btn">
+                        Получить бесплатную консультацию
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reasons">
+
+    </section>
+        
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>		
+
+							
