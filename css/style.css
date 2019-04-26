@@ -100,6 +100,170 @@ body {
   background-color: #E27704;
   margin: 7px 0;
 }
+.reasons {
+  padding-top: 150px;
+}
+.reasons .horline {
+  width: 28%;
+  border-top: 3px solid #E27704;
+}
+.order {
+  background-image: url(../images/order.png);
+  background-size: cover;
+  height: 535px;
+  width: 100%;
+  color: #FFFFFF;
+  padding-top: 150px;
+}
+.order .horline {
+  width: 28%;
+  border-top: 3px solid #E27704;
+}
+.order .get_order {
+  margin-top: 40px;
+}
+.order .get_order .get_order_btn {
+  padding: 15px 60px;
+  background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
+  border-radius: 16px;
+  color: #FFFFFF;
+}
+.order .get_order .get_order_btn:hover {
+  text-decoration: none;
+}
+.works {
+  padding-top: 150px;
+}
+.works .horline {
+  width: 28%;
+  border-top: 3px solid #E27704;
+}
+.faq {
+  background-image: url(../images/faq.png);
+  background-size: cover;
+  height: 649px;
+  width: 100%;
+  color: #FFFFFF;
+  padding-top: 150px;
+}
+.faq .horline {
+  width: 28%;
+  border-top: 3px solid #E27704;
+}
+.faq .get_faq {
+  margin-top: 40px;
+}
+.faq .get_faq .get_faq_btn {
+  padding: 15px 60px;
+  background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
+  border-radius: 16px;
+  color: #FFFFFF;
+}
+.faq .get_faq .get_faq_btn:hover {
+  text-decoration: none;
+}
+.howworks {
+  padding-top: 150px;
+}
+.howworks .horline {
+  width: 28%;
+  border-top: 3px solid #E27704;
+}
+.howworks .step img {
+  width: 100%;
+}
+.howworks .step .hw_text {
+  padding: 0;
+}
+.price {
+  padding-top: 150px;
+}
+.price .horline {
+  width: 28%;
+  border-top: 3px solid #E27704;
+}
+.price .bg_content .price_img {
+  width: 100%;
+}
+.price .get_price {
+  margin-top: -250px;
+}
+.price .get_price .get_price_btn {
+  padding: 15px 60px;
+  background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
+  border-radius: 16px;
+  color: #FFFFFF;
+}
+.price .get_price .get_price_btn:hover {
+  text-decoration: none;
+}
+.price .get_consultation {
+  margin-top: -250px;
+}
+.price .get_consultation .get_consultation_btn {
+  padding: 15px 60px;
+  color: #E27704;
+  border-radius: 16px;
+  border: 1px solid #E27704;
+}
+.price .get_consultation .get_consultation_btn:hover {
+  text-decoration: none;
+}
+.dsc {
+  padding-top: 150px;
+  background-image: url(../images/dsc-bg.png);
+  background-size: cover;
+  height: 830px;
+}
+.dsc .dsc_card {
+  padding: 25px;
+  border-radius: 25px;
+  background: #FFFFFF;
+}
+.dsc .get_dsc_btn {
+  padding: 15px 60px;
+  background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
+  border-radius: 16px;
+  color: #FFFFFF;
+}
+.dsc .get_dsc_btn:hover {
+  text-decoration: none;
+}
+.dsc .sale_bg .card1 {
+  width: 350px;
+  padding-top: 50px;
+}
+.dsc .sale_bg .card2 {
+  width: 350px;
+  margin-top: -305px;
+  margin-left: 25px;
+}
+.footer {
+  padding-top: 150px;
+}
+.footer .horline {
+  width: 28%;
+  border-top: 3px solid #E27704;
+}
+.footer .icons {
+  margin-right: 15px;
+}
+.footer .messengers img,
+.footer .phones img,
+.footer .email img {
+  width: 67px;
+}
+.footer .messengers ul,
+.footer .phones ul,
+.footer .email ul {
+  padding: 0;
+}
+.footer .messengers ul li,
+.footer .phones ul li,
+.footer .email ul li {
+  list-style-type: none;
+  display: inline;
+}
 .sidepanel {
   height: 100%;
   width: 0;
