@@ -49,6 +49,7 @@ body {
 .main .msp_menu {
   text-align: center;
   font-size: 23px;
+  border-bottom: 1px solid #ffffff38;
 }
 .main .horline {
   margin-top: 125px;
@@ -759,6 +760,7 @@ body {
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
+  text-align: left;
 }
 .sidepanel a {
   padding: 8px 8px 8px 32px;
@@ -768,6 +770,10 @@ body {
   display: block;
   transition: 0.3s;
   font-size: 21px;
+}
+.the_menu {
+  border-bottom: 1px solid #ffffff38;
+  margin-left: 25px;
 }
 .sidepanel a:hover {
   color: #f1f1f1;
