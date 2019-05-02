@@ -17,12 +17,12 @@
     <section class="main" id="main">
         <div class="container">
             <div class="row">
-                <div class="col-xl-8 col-10 logo">
+                <div class="col-xl-8 col-6 logo">
                     <a class="navbar-brand" href="#">
                         <img src="images/logo-big.png" alt="">
                     </a>
                 </div>
-                <div class="col-xl-3 col-1 phone">
+                <div class="col-xl-3 col-3 phone">
                     <div class="desktop">
                         <p class="phone_number">+38 (093) 190 25 99</p>
                         <a class="recall" href="#">Заказать обратный звонок</a>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-1 col-1 menu">
+                <div class="col-xl-1 col-3 menu">
                     <button class="openbtn" onclick="openNav()">
                         <div class="top"></div>
                         <div class="center"></div>
@@ -74,9 +74,79 @@
                     <h1 class="slogan">Сайт визитка</h1>
                 </div>
                 <div class="col-12 get_consultation">
-                    <a href="#" class="get_cons_btn">
+                    <a href="#" class="get_cons_btn" data-toggle="modal" data-target="#exampleModalCenter">
                         Получить бесплатную консультацию
                     </a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="feedbackForm" action="process/process.php" novalidate>
+                                        <div class="form-row justify-content-center">
+                                            <div class="col-10 text-center">
+                                                <h1>
+                                                    Получить бесплатною консультацию
+                                                </h1>
+                                            </div>
+                                            <div class="col-8">
+                                            <!-- Имя -->
+                                                <div class="form-group">
+                                                    <label for="name" class="control-label">Ваше имя</label>
+                                                    <input id="name" type="text" name="name" class="form-control" value="" placeholder="Имя" minlength="2" maxlength="30" required="required">
+                                                    <div class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                            <!-- Телефон -->
+                                                <div class="form-group">
+                                                    <label for="phone" class="control-label">Ваш телефон</label>
+                                                    <input id="phone" type="text" name="phone" class="form-control" value="" placeholder="Телефон" minlength="2" maxlength="30" required="required">
+                                                    <div class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                            <!-- Email -->
+                                                <div class="form-group">
+                                                    <label for="email" class="control-label">Ваш e-mail</label>
+                                                    <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email-адрес">
+                                                    <div class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="form-check form-group agreement">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Принимаю условия <a href="#">обработки данных</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Сообщение при ошибке -->
+                                        <div class="alert alert-danger form-error d-none">
+                                            Исправьте данные и отправьте форму ещё раз.
+                                        </div>
+                                        <!-- Кнопка для отправки формы -->
+                                        <div class="text-center submit">
+                                            <button type="submit" class="btn btn-primary position-relative get_submit">Отправить</button>
+                                        </div>
+                                    </form>
+
+                                        <!-- Сообщение об успешной отправки формы -->
+                                    <div class="form-result-success d-none text-center justify-content-center align-items-center" style="position: absolute;
+                                        top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.6); color: #fff; font-size: 1.25rem;">
+                                    <div class="alert alert-success rounded-0">Форма успешно отправлена. Нажмите на
+                                        <a class="alert-link" href="#" data-reloadform="#feedbackForm">ссылку</a>, чтобы отправить ещё одно сообщение.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,7 +161,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 col-12 reason">
+                <div class="col-lg-4 col-12 reason">
                     <p class="number">01</p>
                     <div class="reason_text">
                         <div class="theme">Расширение бизнеса</div>
@@ -100,7 +170,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 reason">
+                <div class="col-lg-4 col-12 reason">
                     <p class="number">02</p>
                     <div class="reason_text">
                         <div class="theme">Деловая репутация</div>
@@ -109,7 +179,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 reason">
+                <div class="col-lg-4 col-12 reason">
                     <p class="number">03</p>
                     <div class="reason_text">
                         <div class="theme">Снижение расходов на другую рекламу</div>
@@ -118,7 +188,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 reason">
+                <div class="col-lg-4 col-12 reason">
                     <p class="number">04</p>
                     <div class="reason_text">
                         <div class="theme">Презентация Ваших работ</div>
@@ -127,7 +197,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4 col-12 reason">
+                <div class="col-lg-4 col-12 reason">
                     <p class="number">05</p>
                     <div class="reason_text">
                         <div class="theme">Экономия времени</div>
@@ -189,7 +259,7 @@
         <div class="horline"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-12">
+                <div class="col-lg-6 col-12">
                     <h2 class="works_slogan">
                         Сайты визитки<br>созданные нами
                     </h2>
@@ -204,10 +274,10 @@
         </div>
         <div class="container eva_info">
             <div class="row">
-                <div class="col-md-6 col-12 eva_mobile">
+                <div class="col-lg-6 col-12 eva_mobile">
                     <img src="images/eva-bg.png" alt="">
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-lg-6 col-12 eva_desc">
                     <p class="number">1</p>
                     <h1>EVA</h1>
                     <p class="eva_info_text">
@@ -225,10 +295,10 @@
         </div>
         <div class="container big_info">
             <div class="row justify-content-end">
-                <div class="col-md-6 col-12 big_mobile">
+                <div class="col-lg-6 col-12 big_mobile">
                     <img src="images/big-bg.png" alt="">
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-lg-6 col-12">
                     <p class="number">2</p>
                     <h1>БИГ</h1>
                     <p class="big_info_text">
@@ -246,10 +316,10 @@
         </div>
         <div class="container souldent_info">
             <div class="row">
-                <div class="col-md-6 col-12 souldent_mobile">
+                <div class="col-lg-6 col-12 souldent_mobile">
                     <img src="images/souldent-bg.png" alt="">
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-lg-6 col-12">
                     <p class="number">3</p>
                     <h1>SOULDENT</h1>
                     <p class="souldent_info_text">
@@ -267,10 +337,10 @@
         </div>
         <div class="container velobum_info">
             <div class="row justify-content-end">
-                <div class="col-md-6 col-12 velobum_mobile">
+                <div class="col-lg-6 col-12 velobum_mobile">
                     <img src="images/velobum-bg.png" alt="">
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-lg-6 col-12">
                     <p class="number">4</p>
                     <h1>VELOBUM</h1>
                     <p class="velobum_info_text">
@@ -288,10 +358,10 @@
         </div>
         <div class="container propolex_info">
             <div class="row">
-                <div class="col-md-6 col-12 propolex_mobile">
+                <div class="col-lg-6 col-12 propolex_mobile">
                     <img src="images/propolex-bg.png" alt="">
                 </div>
-                <div class="col-md-6 col-12">
+                <div class="col-lg-6 col-12">
                     <p class="number">5</p>
                     <h1>PROPOLEX</h1>
                     <p class="propolex_info_text">
@@ -335,7 +405,7 @@
                     </div>
                     <div class="form-group col-12">
                         <label for="inputFaq">Ваш вопрос</label>
-                        <input type="yourText" class="form-control" id="inputFaq">
+                        <input type="yourText" class="form-control" id="inputFaq" size="2">
                     </div>
                     <div class="form-group col-12">
                         <div class="form-check">
@@ -478,7 +548,7 @@
 
     <section class="dsc" id="dsc">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center dsc_block">
                 <div class="col-md-7 col-12 dsc_card">
                     <h2>
                         Закажи <span>сайт визитку</span> прямо<br>сейчас и <span>получи скидку 1500 грн.</span>
@@ -529,8 +599,8 @@
                     <h2>Связаться с нами</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-12 messengers">
+            <div class="row footer_content">
+                <div class="col-lg-4 col-12 messengers">
                     <h3>Мессенджеры:</h3>
                     <ul>
                         <li>
@@ -541,7 +611,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-12 phones">
+                <div class="col-lg-4 col-12 phones">
                     <h3>Телефоны:</h3>
                     <ul>
                         <li>
@@ -560,7 +630,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 col-12 email">
+                <div class="col-lg-4 col-12 email">
                     <h3>E-mail:</h3>
                     <ul>
                         <li>

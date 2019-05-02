@@ -91,6 +91,54 @@ html, body {
             background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
             border-radius: 22px;
             color: #FFFFFF;
+            font-size: 22px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .close {
+            padding: 0;
+            margin: -50px -25px 0 auto;
+            font-size: 50px;
+            color: #FFFFFF;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-decoration: underline;
+            padding-bottom: 25px;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        .modal {
+            color: #232323;
+        }
+
+        .modal-dialog {
+            max-width: 850px;
+        }
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-content {
+            border-radius: 73px;
+        }
+
+        .get_submit {
+            padding: 10px 60px;
+            background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
+            border-radius: 22px;
+            color: #FFFFFF;
+            font-size: 22px;
+            border-color: #fff;
+            margin-bottom: 50px;
 
             &:hover {
                 text-decoration: none;
@@ -841,6 +889,7 @@ html, body {
         background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
         border-radius: 16px;
         color: #FFFFFF;
+        font-size: 22px;
 
         &:hover {
             text-decoration: none;
@@ -961,6 +1010,578 @@ html, body {
             .mobile {
                 display: block;
             }   
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .works {
+        .eva_img, .big_img, .souldent_img,
+        .velobum_img, .propolex_img {
+            display: none;
+        }
+    }
+
+    .price {
+        .price_img {
+            display: none;
+        }
+    }
+
+    .dsc {
+        .sale_bg {
+            display: none;
+        }
+    }
+
+    .works {
+        .eva_info {
+            margin-top: 0;
+        }
+
+        .big_info {
+            margin-top: 0;
+        }
+
+        .souldent_info {
+            margin-top: 0;
+        }
+
+        .velobum_info {
+            margin-top: 0;
+        }
+
+        .propolex_info {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 481px) {
+    .main {
+        height: 373px;
+        background-position: 82%;
+
+        .logo {
+            img {
+                width: 200px;
+                height: 100px;
+                margin-left: -40px;
+            }
+        }
+
+        .phone {
+            margin-top: 22px;
+            text-align: right;
+
+            .mobile {
+                font-size: 21px;
+            }
+        }
+
+        .menu {
+            .openbtn {
+                margin-top: 30px;
+
+                .top {
+                    width: 29px;
+                    height: 2px;
+                }
+
+                .center {
+                    width: 20px;
+                    height: 2px;
+                    margin: 4px 0;
+                }
+
+                .down {
+                    width: 29px;
+                    height: 2px;
+                }
+            }
+        }
+
+        .horline {
+            margin-top: 10px;
+            width: 40%;
+        }
+
+        .first_text {
+            font-size: 12px;
+            padding-top: 5px;
+        }
+
+        .sec_text {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+
+        .slogan {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .get_consultation {
+            text-align: center;
+            margin-top: 15px;
+
+            .get_cons_btn {
+                padding: 12px 13px;
+                font-size: 12px;
+                border-radius: 12px;
+            }
+        }
+    }
+
+    .reasons {
+        padding-top: 25px;
+
+        .horline {
+            width: 40%;
+        }
+
+        h2 {
+            font-size: 20px;
+            padding-top: 10px;
+        }
+
+        .number {
+            font-size: 90px;
+        }
+
+        .reason_text {
+            padding: 15px;
+            margin-top: -80px;
+
+            .theme {
+                text-align: left;
+                font-size: 18px;
+                padding-bottom: 5px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .order {
+        margin-top: 35px;
+        padding-top: 25px;
+        background-position: center;
+
+        .horline {
+            width: 40%;
+        }
+
+        .order_slogan {
+            font-size: 20px;
+            padding-top: 10px;
+        }
+
+        .order_text {
+            font-size: 15px;
+        }
+
+        .form-check-label {
+            font-size: 10px;
+        }
+
+        .get_order {
+            text-align: center;
+            margin-top: 10px;
+
+            .get_order_btn {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .works {
+        padding-top: 25px;
+
+        .horline {
+            width: 40%;
+        }
+
+        .works_slogan {
+            font-size: 20px;
+            padding-top: 10px;
+            margin-top: 0;
+        }
+
+        .work_text {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .eva_info {
+            padding-left: 15px;
+
+            .number {
+                font-size: 70px;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-top: -90px;
+            }
+
+            .eva_info_text {
+                font-size: 15px;
+            }
+
+            .eva_btns {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .eva_info_btn1 {
+                font-size: 15px;
+                padding: 10px 30px;
+            }
+
+            .eva_info_btn {
+                font-size: 15px;
+                padding: 10px 54px;
+            }
+        }
+
+        .big_info {
+            padding-left: 15px;
+
+            .number {
+                font-size: 70px;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-top: -90px;
+            }
+
+            .big_info_text {
+                font-size: 15px;
+            }
+
+            .big_btns {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .big_info_btn1 {
+                font-size: 15px;
+                padding: 10px 30px;
+            }
+
+            .big_info_btn {
+                font-size: 15px;
+                padding: 10px 54px;
+            }
+        }
+
+        .souldent_info {
+            padding-left: 15px;
+
+            .number {
+                font-size: 70px;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-top: -90px;
+            }
+
+            .souldent_info_text {
+                font-size: 15px;
+            }
+
+            .souldent_btns {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .souldent_info_btn1 {
+                font-size: 15px;
+                padding: 10px 30px;
+            }
+
+            .souldent_info_btn {
+                font-size: 15px;
+                padding: 10px 54px;
+            }
+        }
+
+        .velobum_info {
+            padding-left: 15px;
+
+            .number {
+                font-size: 70px;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-top: -90px;
+            }
+
+            .velobum_info_text {
+                font-size: 15px;
+            }
+
+            .velobum_btns {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .velobum_info_btn1 {
+                font-size: 15px;
+                padding: 10px 30px;
+            }
+
+            .velobum_info_btn {
+                font-size: 15px;
+                padding: 10px 54px;
+            }
+        }
+
+        .propolex_info {
+            padding-left: 15px;
+
+            .number {
+                font-size: 70px;
+            }
+
+            h1 {
+                font-size: 50px;
+                margin-top: -90px;
+            }
+
+            .propolex_info_text {
+                font-size: 15px;
+            }
+
+            .propolex_btns {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .propolex_info_btn1 {
+                font-size: 15px;
+                padding: 10px 30px;
+            }
+
+            .propolex_info_btn {
+                font-size: 15px;
+                padding: 10px 54px;
+            }
+        }
+    }
+
+    .faq {
+        margin-top: 25px;
+        padding-top: 25px;
+        background-position: 82%;
+
+        .horline {
+            width: 40%;
+        }
+
+        .faq_slogan {
+            font-size: 20px;
+            padding-top: 10px;
+        }
+
+        .faq_text {
+            font-size: 16px;
+        }
+
+        .form-check-label {
+            font-size: 10px;
+        }
+
+        .get_faq {
+            text-align: center;
+            margin-top: 10px;
+
+            .get_faq_btn {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .howworks {
+        padding-top: 25px;
+
+        .horline {
+            width: 40%;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .step {
+            .hw_text {
+                margin-top: -15px;
+
+                .number {
+                    font-size: 50px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    margin-top: -50px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .price {
+        padding-top: 25px;
+        padding-bottom: 50px;
+
+        .horline {
+            width: 40%;
+        }
+
+        .info {
+            h2 {
+                font-size: 20px;
+                padding-bottom: 0;
+            }
+
+            .info_text {
+                font-size: 18px;
+            }
+
+            ul {
+                padding-left: 0;
+
+                li {
+                    padding-bottom: 15px;
+                    padding-top: 25px;
+                    padding-left: 50px;
+
+                    &:before {
+                        line-height: 20px;
+                        padding-right: 14px;
+                        margin-left: -40px;
+                        padding-bottom: 5px;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        .price_price {
+            font-size: 50px;
+            margin-top: -250px;
+        }
+
+        .get_price, .get_consultation {
+            text-align: center;
+        }
+
+        .get_price {
+            .get_price_btn {
+                font-size: 15px;
+                padding: 10px 80px;
+            }
+        }
+
+        .get_consultation {
+            margin-top: 30px;
+
+            .get_consultation_btn {
+                font-size: 15px;
+                padding: 10px 18px;
+            }
+        }
+    }
+
+    .dsc {
+        padding-top: 15px;
+        background-position: 40%;
+        height: 500px;
+
+        .dsc_block {
+            padding: 20px;
+        }
+
+        .dsc_card {
+            padding: 20px;
+
+            h2 {
+                text-align: center;
+                font-size: 20px;
+                padding-bottom: 10px;
+
+                br {
+                    display: none;
+                }
+            }
+
+            .form-check-label {
+                font-size: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        
+        .get_dsc {
+            text-align: center;
+            margin-bottom: 20px;
+
+            .get_dsc_btn {
+                padding: 10px 30px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 25px;
+
+        .horline {
+            width: 40%;
+        }
+
+        h2 {
+            font-size: 20px;
+            padding-top: 10px;
+        }
+
+        .footer_content {
+            text-align: center;
+        }
+
+        .messengers {
+            h3 {
+                font-size: 18px;  
+                padding-left: 0;  
+                padding-bottom: 10px;
+            }
+
+            img {
+                width: 50px;
+            }
+        }
+
+        .phones, .email {
+            h3 {
+                font-size: 18px;
+                padding-left: 0;  
+                padding-bottom: 10px;
+            }
+
+            img {
+                width: 35px;
+            }
+
+            ul {
+                li {
+                    font-size: 18px;
+                }
+            }
         }
     }
 }
