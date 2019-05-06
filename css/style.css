@@ -836,13 +836,22 @@ body {
     display: block;
   }
 }
-@media (max-width: 1000px) {
-  .works .eva_img,
-  .works .big_img,
-  .works .souldent_img,
-  .works .velobum_img,
-  .works .propolex_img {
-    display: none;
+@media (max-width: 991px) {
+  .works .eva_img img {
+    margin-top: 0;
+    width: 100%;
+  }
+  .works .big_img img {
+    width: 100%;
+  }
+  .works .souldent_img img {
+    width: 100%;
+  }
+  .works .velobum_img img {
+    width: 100%;
+  }
+  .works .propolex_img img {
+    width: 100%;
   }
   .price .price_img {
     display: none;
@@ -866,7 +875,7 @@ body {
     margin-top: 0;
   }
 }
-@media (max-width: 481px) {
+@media (max-width: 496px) {
   .main {
     height: 373px;
     background-position: 82%;
@@ -1032,6 +1041,12 @@ body {
     font-size: 15px;
     padding: 10px 54px;
   }
+  .works .big_img {
+    margin-top: 0;
+  }
+  .works .big_img img {
+    margin-top: 25px;
+  }
   .works .big_info {
     padding-left: 15px;
   }
@@ -1056,6 +1071,12 @@ body {
   .works .big_info .big_info_btn {
     font-size: 15px;
     padding: 10px 54px;
+  }
+  .works .souldent_img {
+    margin-top: 0;
+  }
+  .works .souldent_img img {
+    margin-top: 25px;
   }
   .works .souldent_info {
     padding-left: 15px;
@@ -1082,6 +1103,12 @@ body {
     font-size: 15px;
     padding: 10px 54px;
   }
+  .works .velobum_img {
+    margin-top: 0;
+  }
+  .works .velobum_img img {
+    margin-top: 25px;
+  }
   .works .velobum_info {
     padding-left: 15px;
   }
@@ -1106,6 +1133,12 @@ body {
   .works .velobum_info .velobum_info_btn {
     font-size: 15px;
     padding: 10px 54px;
+  }
+  .works .propolex_img {
+    margin-top: 0;
+  }
+  .works .propolex_img img {
+    margin-top: 25px;
   }
   .works .propolex_info {
     padding-left: 15px;
