@@ -217,10 +217,12 @@ html, body {
 .order {
     background-image: url(../images/order.png);
     background-size: cover;
-    height: 535px;
+    min-height: 535px;
+    height: auto;
     width: 100%;
     color: #FFFFFF;
     padding-top: 100px;
+    padding-bottom: 100px;
     margin-top: 150px;
 
     .horline {
@@ -1062,6 +1064,40 @@ html, body {
 
         .propolex_info {
             margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .works {
+        .eva_info {
+            h1 {
+                font-size: 65px;
+            }
+        }
+
+        .big_info {
+            h1 {
+                font-size: 65px;
+            }
+        }
+
+        .souldent_info {
+            h1 {
+                font-size: 65px;
+            }
+        }
+
+        .velobum_info {
+            h1 {
+                font-size: 65px;
+            }
+        }
+
+        .propolex_info {
+            h1 {
+                font-size: 65px;
+            }
         }
     }
 }

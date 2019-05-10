@@ -26,13 +26,13 @@ $form['form-1'] = array(
 				'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
 			)
 		),
-		'tell' => array(
+		'	' => array(
 			'title' => 'Телефон',
 			'validate' => array(
 				'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
 				'minlength' => '5',
 			),
-			'messages' => array(
+		'messages' => array(
 				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 			)
@@ -70,7 +70,7 @@ $form['form-2'] = array(
 				'minlength' => '3',
 				'maxlength' => '35',
 			),
-			'messages' => array(
+		'messages' => array(
 				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 				'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
@@ -221,7 +221,7 @@ $form['form-3'] = array(
 		'geoip' => true,
 		'referer' => true,
 		'type' => 'plain',
-		'tpl' => false,
+		'tpl' => true,
 		'antispam' => 'email77',
 		'antispamjs' => 'address77',
 		'okay' => 'Сообщение отправлено - OK',
