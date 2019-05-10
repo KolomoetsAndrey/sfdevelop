@@ -12,6 +12,20 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Feedback-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="feedback/js/feedback.js"></script>
+    <script src="feedback/js/jquery.arcticmodal.js"></script>
+    <script src="feedback/js/jquery.jgrowl.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(document).on('click', '.modal_btn', function(){
+			$('#small-modal').arcticmodal();
+		});
+	});
+    </script>
+    <link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
+    <link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
 </head>
 <body>
     <section class="main" id="main">
@@ -87,62 +101,49 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form id="feedbackForm" action="process/process.php" novalidate>
+                                    <form action="" method="get" name="form-2">
                                         <div class="form-row justify-content-center">
                                             <div class="col-10 text-center">
                                                 <h1>
                                                     Получить бесплатною консультацию
                                                 </h1>
                                             </div>
-                                            <div class="col-8">
                                             <!-- Имя -->
+                                            <div class="col-8">
                                                 <div class="form-group">
                                                     <label for="name" class="control-label">Ваше имя</label>
                                                     <input id="name" type="text" name="name" class="form-control" value="" placeholder="Имя" minlength="2" maxlength="30" required="required">
-                                                    <div class="invalid-feedback"></div>
                                                 </div>
                                             </div>
-                                            <div class="col-8">
                                             <!-- Телефон -->
+                                            <div class="col-8">
                                                 <div class="form-group">
                                                     <label for="phone" class="control-label">Ваш телефон</label>
-                                                    <input id="phone" type="text" name="phone" class="form-control" value="" placeholder="Телефон" minlength="2" maxlength="30" required="required">
-                                                    <div class="invalid-feedback"></div>
+                                                    <input id="phone" type="text" name="tell" class="form-control" value="" placeholder="Телефон" minlength="2" maxlength="30" required="required">
                                                 </div>
                                             </div>
-                                            <div class="col-8">
                                             <!-- Email -->
+                                            <div class="col-8">
                                                 <div class="form-group">
                                                     <label for="email" class="control-label">Ваш e-mail</label>
-                                                    <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email-адрес">
-                                                    <div class="invalid-feedback"></div>
+                                                    <input id="email" type="email" name="e-mail" required="required" class="form-control" value="" placeholder="Email-адрес">
                                                 </div>
                                             </div>
-                                            <div class="col-8">
-                                                <div class="form-check form-group agreement">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label" for="gridCheck">
+                                            <!--Пользовательское соглашение-->
+                                            <div class="col-8 agreement">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck">
+                                                    <label class="custom-control-label" for="customCheck">
                                                         Принимаю условия <a href="#">обработки данных</a>
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Сообщение при ошибке -->
-                                        <div class="alert alert-danger form-error d-none">
-                                            Исправьте данные и отправьте форму ещё раз.
-                                        </div>
                                         <!-- Кнопка для отправки формы -->
-                                        <div class="text-center submit">
-                                            <button type="submit" class="btn btn-primary position-relative get_submit">Отправить</button>
+                                        <div class="text-center mt-4">
+                                            <input type="button" name="send" class="feedback btn get_submit" value="Отправить">
                                         </div>
                                     </form>
-
-                                        <!-- Сообщение об успешной отправки формы -->
-                                    <div class="form-result-success d-none text-center justify-content-center align-items-center" style="position: absolute;
-                                        top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.6); color: #fff; font-size: 1.25rem;">
-                                    <div class="alert alert-success rounded-0">Форма успешно отправлена. Нажмите на
-                                        <a class="alert-link" href="#" data-reloadform="#feedbackForm">ссылку</a>, чтобы отправить ещё одно сообщение.</div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -223,32 +224,36 @@
                     </p>
                 </div>
             </div>
-            <form>
+            <form action="" method="get" name="form-3">
                 <div class="form-row">
-                    <div class="form-group col-md-4 col-12">
-                        <label for="inputName">Ваше имя</label>
-                        <input type="yourName" class="form-control" id="inputName">
-                    </div>
-                    <div class="form-group col-md-4 col-12">
-                        <label for="inputPhone">Ваш телефон</label>
-                        <input type="yourPhone" class="form-control" id="inputPhone">
-                    </div>
-                    <div class="form-group col-md-4 col-12">
-                        <label for="inputMail">Ваш Email</label>
-                        <input type="yourMail" class="form-control" id="inputMail">
-                    </div>
-                    <div class="form-group col-12">
-                        <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Принимаю условия <a href="#">обработки данных</a>
-                        </label>
+                    <div class="col-md-4 col-12">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input id="name" type="text" name="name" class="form-control" value="" placeholder="Имя" minlength="2" maxlength="30" required="required">
                         </div>
                     </div>
-                    <div class="col-12 get_order">
-                        <a href="#" class="get_order_btn">
-                            Заказать
-                        </a>
+                    <div class="col-md-4 col-12">
+                        <div class="form-group">
+                            <label for="phone">Ваш телефон</label>
+                            <input type="phone" name="tell" class="form-control" id="phone">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="form-group">
+                            <label for="email">Ваш Email</label>
+                            <input type="email" name="e-mail" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">
+                                Принимаю условия <a href="#">обработки данных</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 get_order submit">
+                        <input type="button" name="send" class="btn get_order_btn" value="Заказать">
                     </div>
                 </div>
             </form>
@@ -389,36 +394,42 @@
                     </p>
                 </div>
             </div>
-            <form>
+            <form action="" method="get" name="form-3">
                 <div class="form-row">
-                    <div class="form-group col-md-4 col-12">
-                        <label for="inputName">Ваше имя</label>
-                        <input type="yourName" class="form-control" id="inputName">
+                    <div class="col-md-4 col-12">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="name" name="name" class="form-control" id="name">
+                        </div>
                     </div>
-                    <div class="form-group col-md-4 col-12">
-                        <label for="inputPhone">Ваш телефон</label>
-                        <input type="yourPhone" class="form-control" id="inputPhone">
+                    <div class="col-md-4 col-12">
+                        <div class="form-group">
+                            <label for="phone">Ваш телефон</label>
+                            <input type="phone" name="tell" class="form-control" id="phone">
+                        </div>
                     </div>
-                    <div class="form-group col-md-4 col-12">
-                        <label for="inputMail">Ваш Email</label>
-                        <input type="yourMail" class="form-control" id="inputMail">
+                    <div class="col-md-4 col-12">
+                        <div class="form-group">
+                            <label for="email">Ваш Email</label>
+                            <input type="email" name="e-mail" class="form-control" id="email">
+                        </div>
                     </div>
-                    <div class="form-group col-12">
-                        <label for="inputFaq">Ваш вопрос</label>
-                        <input type="yourText" class="form-control" id="inputFaq" size="2">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="faq">Ваш вопрос</label>
+                            <input type="text" name="text" class="form-control" id="faq" size="2">
+                        </div>
                     </div>
-                    <div class="form-group col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
+                    <div class="col-12">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">
                                 Принимаю условия <a href="#">обработки данных</a>
                             </label>
                         </div>
                     </div>
                     <div class="col-12 get_faq">
-                        <a href="#" class="get_faq_btn">
-                            Отправить
-                        </a>
+                        <input class="get_faq_btn" type="button" name="send" value="Отправить">
                     </div>
                 </div>
             </form>
@@ -555,28 +566,30 @@
                     </h2>
                     <div class="row">
                         <div class="col-md-7 col-12 sale_form">
-                            <form>
+                            <form action="" method="get" name="form-1">
                                 <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label for="inputName">Ваше имя</label>
-                                        <input type="yourName" class="form-control" id="inputName">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="name">Ваше имя</label>
+                                            <input type="name" name="name" class="form-control" id="name">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-12">
-                                        <label for="inputMail">Ваш Email</label>
-                                        <input type="yourMail" class="form-control" id="inputMail">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="mail">Ваш Email</label>
+                                            <input type="mail" name="e-mail" class="form-control" id="mail">
+                                        </div>
                                     </div>
-                                    <div class="form-group col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
+                                    <div class="col-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck4">
+                                            <label class="custom-control-label" for="customCheck4">
                                                 Принимаю условия <a href="#">обработки данных</a>
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-12 get_dsc">
-                                        <a href="#" class="get_dsc_btn">
-                                            Получить скидку
-                                        </a>
+                                        <input type="button" name="send" class="get_dsc_btn" value="Получить скидку">
                                     </div>
                                 </div>
                             </form>
