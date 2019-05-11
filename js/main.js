@@ -25,3 +25,13 @@ function openPhone() {
 function closePhone() {
     document.getElementById("myOpenphone").style.width = "0";
 };
+
+$(function() {
+    var chk = $('.custom-control-input');
+    var btn = $('#send');
+  
+    chk.on('change', function() {
+      btn.prop("disabled", !this.checked);//true: disabled, false: enabled
+    }).trigger('change'); //page load trigger event
+});
+

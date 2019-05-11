@@ -10,58 +10,8 @@ $form = array();
 $host = $_SERVER['HTTP_HOST'];
 $ref = $_SERVER['HTTP_REFERER'];
 
-
-$form['form-1'] = array(
-	'fields' => array(
-		'name' => array(
-			'title' => 'Имя',
-			'validate' => array(
-				'preg' => '%[A-Z-a-zА-Яа-я\s]%',
-				'minlength' => '3',
-				'maxlength' => '35',
-			),
-			'messages' => array(
-				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
-				'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
-			)
-		),
-		'	' => array(
-			'title' => 'Телефон',
-			'validate' => array(
-				'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
-				'minlength' => '5',
-			),
-		'messages' => array(
-				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
-			)
-		),
-	),
-	'cfg' => array(
-		'charset' => 'utf-8',
-		'subject' => 'Тема письма',
-		'title' => 'Заголовок в теле письма',
-		'ajax' => true,
-		'validate' => true,
-		'from_email' => 'info@sfdevelop.com',
-		'from_name' => 'noreply',
-		'to_email' => 'info@sfdevelop.com, info@sfdevelop.com',
-		'to_name' => 'noreply1, noreply2',
-		'geoip' => true,
-		'referer' => true,
-		'type' => 'html',
-		'tpl' => true,
-		'antispam' => 'email77',
-		'antispamjs' => 'address77',
-		'okay' => 'Сообщение отправлено - OK',
-		'fuck' => 'Сообщение отправлено - ERROR',
-		'spam' => 'Cпам робот',
-		'notify' => 'color-modal-textbox',
-		'usepresuf' => false
-	)
-);
-$form['form-2'] = array(
+/* Form on Main Section -001 */
+$form['form-001'] = array(
 	'fields' => array(
 		'name' => array(
 			'title' => 'Имя',
@@ -71,7 +21,7 @@ $form['form-2'] = array(
 				'maxlength' => '35',
 			),
 		'messages' => array(
-				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+				'preg' => 'Поле Имя возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 				'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
 			)
@@ -83,7 +33,7 @@ $form['form-2'] = array(
 				'minlength' => '5',
 			),
 			'messages' => array(
-				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+				'preg' => 'Поле Телефон возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 			)
 		),
@@ -94,47 +44,37 @@ $form['form-2'] = array(
 				'minlength' => '5',
 			),
 			'messages' => array(
-				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+				'preg' => 'Поле Email возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
-			)
-		),
-		'text' => array(
-			'title' => 'Сообщение',
-		),
-		'checkbox' => array(
-			'title' => 'Checkbox',
-			'validate' => array(
-				'minlength' => '1',
-			),
-			'messages' => array(
-				'minlength' => '[ %1$s ] необходимо установить',
 			)
 		),
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',
-		'subject' => 'Тема письма',
+		'subject' => 'Получить бесплатною консультацию',
 		'title' => 'Заголовок в теле письма',
 		'ajax' => true,
 		'validate' => true,
-		'from_email' => 'info@sfdevelop.com',
-		'from_name' => 'noreply',
-		'to_email' => 'info@sfdevelop.com, info@sfdevelop.com',
-		'to_name' => 'noreply1, noreply2',
+		'from_email' => 'noreply@email.com',
+		'from_name' => 'sfdevelop.com',
+		'to_email' => 'info@sfdevelop.com',
+		'to_name' => 'Gmail, Corparate',
 		'geoip' => true,
 		'referer' => true,
 		'type' => 'html',
 		'tpl' => true,
 		'antispam' => 'email77',
 		'antispamjs' => 'address77',
-		'okay' => 'Сообщение отправлено - OK',
+		'okay' => 'Вы запросили аудит сайта, мы его проведем и результаты предоставим Вам на электронную почту в течение 24 часов.',
 		'fuck' => 'Сообщение отправлено - ERROR',
 		'spam' => 'Cпам робот',
 		'notify' => 'color-modal-textbox',
 		'usepresuf' => false
 	)
 );
-$form['form-3'] = array(
+
+/* Form on Order Section -002 */
+$form['form-002'] = array(
 	'fields' => array(
 		'name' => array(
 			'title' => 'Имя',
@@ -143,8 +83,8 @@ $form['form-3'] = array(
 				'minlength' => '3',
 				'maxlength' => '35',
 			),
-			'messages' => array(
-				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+		'messages' => array(
+				'preg' => 'Поле Имя возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 				'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
 			)
@@ -156,7 +96,7 @@ $form['form-3'] = array(
 				'minlength' => '5',
 			),
 			'messages' => array(
-				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+				'preg' => 'Поле Телефон возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 			)
 		),
@@ -167,7 +107,70 @@ $form['form-3'] = array(
 				'minlength' => '5',
 			),
 			'messages' => array(
-				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+				'preg' => 'Поле Email возможно содержит ошибку',
+				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			)
+		),
+	),
+	'cfg' => array(
+		'charset' => 'utf-8',
+		'subject' => 'Закажите сайт визитку с гарантией',
+		'title' => 'Заголовок в теле письма',
+		'ajax' => true,
+		'validate' => true,
+		'from_email' => 'noreply@email.com',
+		'from_name' => 'sfdevelop.com',
+		'to_email' => 'info@sfdevelop.com',
+		'to_name' => 'Gmail, Corparate',
+		'geoip' => true,
+		'referer' => true,
+		'type' => 'html',
+		'tpl' => true,
+		'antispam' => 'email77',
+		'antispamjs' => 'address77',
+		'okay' => 'Вы запросили аудит сайта, мы его проведем и результаты предоставим Вам на электронную почту в течение 24 часов.',
+		'fuck' => 'Сообщение отправлено - ERROR',
+		'spam' => 'Cпам робот',
+		'notify' => 'color-modal-textbox',
+		'usepresuf' => false
+	)
+);
+
+/* Form on FAQ Section -003 */
+$form['form-003'] = array(
+	'fields' => array(
+		'name' => array(
+			'title' => 'Имя',
+			'validate' => array(
+				'preg' => '%[A-Z-a-zА-Яа-я\s]%',
+				'minlength' => '3',
+				'maxlength' => '35',
+			),
+		'messages' => array(
+				'preg' => 'Поле Имя возможно содержит ошибку',
+				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+				'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
+			)
+		),
+		'tell' => array(
+			'title' => 'Телефон',
+			'validate' => array(
+				'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
+				'minlength' => '5',
+			),
+			'messages' => array(
+				'preg' => 'Поле Телефон возможно содержит ошибку',
+				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			)
+		),
+		'e-mail' => array(
+			'title' => 'E-mail',
+			'validate' => array(
+				'preg' => '%@%is',
+				'minlength' => '5',
+			),
+			'messages' => array(
+				'preg' => 'Поле Email возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 			)
 		),
@@ -177,63 +180,85 @@ $form['form-3'] = array(
 				'minlength' => '1',
 			),
 			'messages' => array(
-				'minlength' => '[ %1$s ] необходимо заполнить',
-			)
-		),
-		'checkbox' => array(
-			'title' => 'Checkbox',
-			'validate' => array(
-				'minlength' => '1',
-			),
-			'messages' => array(
-				'minlength' => '[ %1$s ] необходимо установить',
-			)
-		),
-		'radio' => array(
-			'title' => 'Radio',
-			'validate' => array(
-				'minlength' => '1',
-			),
-			'messages' => array(
-				'minlength' => '[ %1$s ] необходимо выбрать',
-			)
-		),
-		'select' => array(
-			'title' => 'Select',
-			'validate' => array(
-				'minlength' => '1',
-			),
-			'messages' => array(
-				'minlength' => '[ %1$s ] необходимо выбрать',
+				'minlength' => 'Данное поле необходимо заполнить',
 			)
 		),
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',
-		'subject' => 'Тема письма',
+		'subject' => 'У Вас есть вопросы?',
 		'title' => 'Заголовок в теле письма',
 		'ajax' => true,
 		'validate' => true,
-		'from_email' => 'info@sfdevelop.com',
-		'from_name' => 'noreply',
-		'to_email' => 'info@sfdevelop.com, info@sfdevelop.com',
-		'to_name' => 'noreply1, noreply2',
+		'from_email' => 'noreply@email.com',
+		'from_name' => 'sfdevelop.com',
+		'to_email' => 'info@sfdevelop.com',
+		'to_name' => 'Gmail, Corparate',
 		'geoip' => true,
 		'referer' => true,
-		'type' => 'plain',
+		'type' => 'html',
 		'tpl' => true,
 		'antispam' => 'email77',
 		'antispamjs' => 'address77',
-		'okay' => 'Сообщение отправлено - OK',
+		'okay' => 'Вы запросили аудит сайта, мы его проведем и результаты предоставим Вам на электронную почту в течение 24 часов.',
 		'fuck' => 'Сообщение отправлено - ERROR',
 		'spam' => 'Cпам робот',
-		'notify' => 'color-modal',
+		'notify' => 'color-modal-textbox',
 		'usepresuf' => false
 	)
 );
 
-
-
+/* Form on DSC Section -004 */
+$form['form-003'] = array(
+	'fields' => array(
+		'name' => array(
+			'title' => 'Имя',
+			'validate' => array(
+				'preg' => '%[A-Z-a-zА-Яа-я\s]%',
+				'minlength' => '3',
+				'maxlength' => '35',
+			),
+		'messages' => array(
+				'preg' => 'Поле Имя возможно содержит ошибку',
+				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+				'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
+			)
+		),
+		'e-mail' => array(
+			'title' => 'E-mail',
+			'validate' => array(
+				'preg' => '%@%is',
+				'minlength' => '5',
+			),
+			'messages' => array(
+				'preg' => 'Поле Email возможно содержит ошибку',
+				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			)
+		),
+	),
+	'cfg' => array(
+		'charset' => 'utf-8',
+		'subject' => 'Заказ сайта-визитки',
+		'title' => 'Заголовок в теле письма',
+		'ajax' => true,
+		'validate' => true,
+		'from_email' => 'noreply@email.com',
+		'from_name' => 'sfdevelop.com',
+		'to_email' => 'info@sfdevelop.com',
+		'to_name' => 'Gmail, Corparate',
+		'geoip' => true,
+		'referer' => true,
+		'type' => 'html',
+		'tpl' => true,
+		'antispam' => 'email77',
+		'antispamjs' => 'address77',
+		'okay' => 'Вы запросили аудит сайта, мы его проведем и результаты предоставим Вам на электронную почту в течение 24 часов.',
+		'fuck' => 'Сообщение отправлено - ERROR',
+		'spam' => 'Cпам робот',
+		'notify' => 'color-modal-textbox',
+		'usepresuf' => false
+	)
+);
 
 if($act == 'cfg') {
    $jsonBox['configs'] = ExportConfigs($form);
@@ -470,4 +495,3 @@ function adds($vars) {
       return false;
     }
  }
-

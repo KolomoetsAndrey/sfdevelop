@@ -23,6 +23,7 @@
 .arcticmodal-container_i {
     height: 100%;
     margin: 0 auto;
+    width: 100%;
 }
 
 .arcticmodal-container_i2 {
@@ -72,10 +73,14 @@
     width: 455px;
 }
 #small-modal {
-    width: 255px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
 }
 #feedback-modal-box {
-    width: 300px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 #feedback-modal-box #feedback-infolist {
     list-style: none;
@@ -96,8 +101,8 @@
     border-radius: 5px;
 }
 .modal-close {
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     right: 6px;
     top: 6px;
@@ -106,12 +111,12 @@
     text-align: center;
     line-height: 26px;
     color: #fff;
-    background: #4497c6;
+    background: #d9480f;
     cursor: pointer;
     border-radius: 13px;
     font-family: Verdana;
 }
 
 .modal-close:hover {
-    background: #4aa5d8;
+    background: #d9480f;
 }

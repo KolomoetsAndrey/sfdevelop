@@ -101,7 +101,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="" method="get" name="form-2">
+                                    <form action="" method="get" name="form-001" id="feedbackForm">
                                         <div class="form-row justify-content-center">
                                             <div class="col-10 text-center">
                                                 <h1>
@@ -132,7 +132,7 @@
                                             <!--Пользовательское соглашение-->
                                             <div class="col-8 agreement">
                                                 <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck">
+                                                    <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck" checked>
                                                     <label class="custom-control-label" for="customCheck">
                                                         Принимаю условия <a href="#">обработки данных</a>
                                                     </label>
@@ -141,7 +141,7 @@
                                         </div>
                                         <!-- Кнопка для отправки формы -->
                                         <div class="text-center mt-4">
-                                            <input type="button" name="send" class="feedback btn get_submit" value="Отправить">
+                                            <input type="button" id="send" name="send" class="feedback btn get_submit" value="Отправить">
                                         </div>
                                     </form>
                                 </div>
@@ -224,7 +224,7 @@
                     </p>
                 </div>
             </div>
-            <form action="" method="get" name="form-3">
+            <form action="" method="get" name="form-002" id="feedbackForm">
                 <div class="form-row">
                     <div class="col-md-4 col-12">
                         <div class="form-group">
@@ -246,14 +246,14 @@
                     </div>
                     <div class="col-12">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck2">
+                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck2" checked>
                             <label class="custom-control-label" for="customCheck2">
                                 Принимаю условия <a href="#">обработки данных</a>
                             </label>
                         </div>
                     </div>
-                    <div class="col-12 get_order submit">
-                        <input type="button" name="send" class="feedback btn get_order_btn" value="Заказать">
+                    <div class="col-12 get_order">
+                        <input type="button" id="send" name="send" class="feedback btn get_order_btn" value="Заказать">
                     </div>
                 </div>
             </form>
@@ -394,7 +394,7 @@
                     </p>
                 </div>
             </div>
-            <form action="" method="get" name="form-3">
+            <form action="" method="get" name="form-003">
                 <div class="form-row">
                     <div class="col-md-4 col-12">
                         <div class="form-group">
@@ -422,14 +422,14 @@
                     </div>
                     <div class="col-12">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck3">
+                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck3" checked>
                             <label class="custom-control-label" for="customCheck3">
                                 Принимаю условия <a href="#">обработки данных</a>
                             </label>
                         </div>
                     </div>
                     <div class="col-12 get_faq">
-                        <input class="get_faq_btn feedback" type="button" name="send" value="Отправить">
+                        <input class="get_faq_btn feedback" type="button" id="send" name="send" value="Отправить">
                     </div>
                 </div>
             </form>
@@ -566,7 +566,7 @@
                     </h2>
                     <div class="row">
                         <div class="col-md-7 col-12 sale_form">
-                            <form action="" method="get" name="form-1">
+                            <form action="" method="get" name="form-004">
                                 <div class="form-row">
                                     <div class="col-12">
                                         <div class="form-group">
@@ -582,14 +582,14 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck4">
+                                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck4" checked>
                                             <label class="custom-control-label" for="customCheck4">
                                                 Принимаю условия <a href="#">обработки данных</a>
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-12 get_dsc">
-                                        <input type="button" name="send" class="feedback get_dsc_btn" value="Получить скидку">
+                                        <input type="button" id="send" name="send" class="feedback get_dsc_btn" value="Получить скидку">
                                     </div>
                                 </div>
                             </form>
@@ -659,7 +659,6 @@
     </section>
         
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
