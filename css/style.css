@@ -10,6 +10,14 @@ body {
   padding: 0;
   font-weight: 400;
 }
+button,
+button:active,
+button:focus {
+  outline: 0;
+}
+.custom-control-label {
+  font-size: 18px;
+}
 .main {
   background-image: url(../images/main-bg.png);
   background-size: cover;
@@ -76,6 +84,7 @@ body {
   padding: 24px 27px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 22px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
 }
@@ -92,33 +101,6 @@ body {
   font-size: 30px;
   text-decoration: underline;
   padding-bottom: 25px;
-}
-.main .get_consultation label {
-  font-size: 18px;
-}
-.main .get_consultation .modal {
-  color: #232323;
-}
-.main .get_consultation .modal-dialog {
-  max-width: 850px;
-}
-.main .get_consultation .modal-header {
-  border-bottom: none;
-}
-.main .get_consultation .modal-content {
-  border-radius: 73px;
-}
-.main .get_consultation .get_submit {
-  padding: 10px 60px;
-  background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
-  border-radius: 22px;
-  color: #FFFFFF;
-  font-size: 22px;
-  border-color: #fff;
-  margin-bottom: 50px;
-}
-.main .get_consultation .get_submit:hover {
-  text-decoration: none;
 }
 .menu {
   text-align: right;
@@ -215,6 +197,7 @@ body {
   padding: 10px 80px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
 }
@@ -281,6 +264,7 @@ body {
   padding: 15px 60px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
   box-shadow: 3px 3px 6px #0000001a;
@@ -339,6 +323,7 @@ body {
   padding: 15px 60px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
   box-shadow: 3px 3px 6px #0000001a;
@@ -397,6 +382,7 @@ body {
   padding: 15px 60px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
   box-shadow: 3px 3px 6px #0000001a;
@@ -455,6 +441,7 @@ body {
   padding: 15px 60px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
   box-shadow: 3px 3px 6px #0000001a;
@@ -513,6 +500,7 @@ body {
   padding: 15px 60px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
   box-shadow: 3px 3px 6px #0000001a;
@@ -535,10 +523,12 @@ body {
 .faq {
   background-image: url(../images/faq.png);
   background-size: cover;
-  height: 649px;
+  min-height: 649px;
+  height: auto;
   width: 100%;
   color: #FFFFFF;
   padding-top: 100px;
+  padding-bottom: 100px;
   margin-top: 200px;
 }
 .faq .horline {
@@ -556,9 +546,6 @@ body {
   font-style: italic;
   font-weight: 300;
 }
-.faq label {
-  font-size: 18px;
-}
 .faq .get_faq {
   margin-top: 40px;
 }
@@ -566,6 +553,7 @@ body {
   padding: 10px 80px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
 }
@@ -669,6 +657,7 @@ body {
   padding: 15px 60px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
   box-shadow: 3px 3px 6px #0000001a;
@@ -683,6 +672,7 @@ body {
   border: 1px solid #E27704;
   font-size: 22px;
   box-shadow: 3px 3px 6px #0000001a;
+  background: #FFFFFF;
 }
 .price .get_consultation .get_consultation_btn:hover {
   text-decoration: none;
@@ -714,9 +704,6 @@ body {
   color: #E27704;
   text-decoration: underline;
 }
-.dsc .dsc_card label {
-  font-size: 18px;
-}
 .dsc .dsc_card .form-check-label {
   font-size: 14px;
   padding-bottom: 30px;
@@ -725,6 +712,7 @@ body {
   padding: 15px 60px;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
+  border: none;
   color: #FFFFFF;
   font-size: 22px;
 }
@@ -821,6 +809,42 @@ body {
 .openbtn:hover {
   background-color: #444;
 }
+#small-modal {
+  max-width: 850px;
+}
+.box-modal {
+  border-radius: 73px;
+}
+.modal-close {
+  width: 0;
+  height: 0;
+  right: 0;
+  top: -20px;
+  font-size: 40px;
+  color: #a5a5a5;
+  background: none;
+}
+.box-modal {
+  color: #232323;
+}
+.box-modal form h1 {
+  font-size: 30px;
+  text-decoration: underline;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.box-modal form .get_submit {
+  padding: 10px 60px;
+  background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
+  border-radius: 22px;
+  color: #FFFFFF;
+  font-size: 22px;
+  border-color: #fff;
+  margin-bottom: 50px;
+}
+.box-modal form .get_submit:hover {
+  text-decoration: none;
+}
 @media (max-width: 1200px) {
   .main .phone .desktop {
     display: none;
@@ -869,6 +893,9 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .custom-control-label {
+    font-size: 12px;
+  }
   .works .eva_info h1 {
     font-size: 65px;
   }
@@ -883,6 +910,9 @@ body {
   }
   .works .propolex_info h1 {
     font-size: 65px;
+  }
+  .price .get_consultation .get_consultation_btn {
+    margin-top: 25px;
   }
 }
 @media (max-width: 496px) {
@@ -944,9 +974,6 @@ body {
   .main .get_consultation h1 {
     font-size: 18px;
   }
-  .main .get_consultation .form-check-label {
-    font-size: 10px;
-  }
   .main .get_consultation .get_submit {
     font-size: 15px;
   }
@@ -1000,9 +1027,6 @@ body {
   }
   .order .order_text {
     font-size: 15px;
-  }
-  .order .form-check-label {
-    font-size: 10px;
   }
   .order .get_order {
     text-align: center;
@@ -1190,9 +1214,6 @@ body {
   .faq .faq_text {
     font-size: 16px;
   }
-  .faq .form-check-label {
-    font-size: 10px;
-  }
   .faq .get_faq {
     text-align: center;
     margin-top: 10px;
@@ -1286,10 +1307,6 @@ body {
   }
   .dsc .dsc_card h2 br {
     display: none;
-  }
-  .dsc .dsc_card .form-check-label {
-    font-size: 10px;
-    padding-bottom: 10px;
   }
   .dsc .get_dsc {
     text-align: center;

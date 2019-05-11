@@ -7,7 +7,6 @@
     <title>Document</title>
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
     <!--Fonts Google-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic" rel="stylesheet">
     <!--FontAwesome-->
@@ -26,6 +25,7 @@
     </script>
     <link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
     <link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section class="main" id="main">
@@ -54,7 +54,7 @@
                         <a class="the_menu" href="tel:+380931902599">+38 (093) 190 25 99</a>
                         <a class="the_menu" href="tel:+380988620779">+38 (098) 862 07 79</a>
                         <a class="the_menu" href="#">info@sfdevelop.com</a>
-                        <a class="get_phone the_menu" href="#" data-toggle="modal" data-target="#exampleModalCenter">Заказать обратный звонок</a>
+                        <a class="get_phone the_menu modal_btn" href="#">Заказать обратный звонок</a>
                     </div>
                 </div>
 
@@ -88,66 +88,9 @@
                     <h1 class="slogan">Сайт визитка</h1>
                 </div>
                 <div class="col-12 get_consultation">
-                    <a href="#" class="get_cons_btn" data-toggle="modal" data-target="#exampleModalCenter">
+                    <button class="get_cons_btn modal_btn">
                         Получить бесплатную консультацию
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="" method="get" name="form-001" id="feedbackForm">
-                                        <div class="form-row justify-content-center">
-                                            <div class="col-10 text-center">
-                                                <h1>
-                                                    Получить бесплатною консультацию
-                                                </h1>
-                                            </div>
-                                            <!-- Имя -->
-                                            <div class="col-8">
-                                                <div class="form-group">
-                                                    <label for="name" class="control-label">Ваше имя</label>
-                                                    <input id="name" type="text" name="name" class="form-control" value="" placeholder="Имя" minlength="2" maxlength="30" required="required">
-                                                </div>
-                                            </div>
-                                            <!-- Телефон -->
-                                            <div class="col-8">
-                                                <div class="form-group">
-                                                    <label for="phone" class="control-label">Ваш телефон</label>
-                                                    <input id="phone" type="text" name="tell" class="form-control" value="" placeholder="Телефон" minlength="2" maxlength="30" required="required">
-                                                </div>
-                                            </div>
-                                            <!-- Email -->
-                                            <div class="col-8">
-                                                <div class="form-group">
-                                                    <label for="email" class="control-label">Ваш e-mail</label>
-                                                    <input id="email" type="email" name="e-mail" required="required" class="form-control" value="" placeholder="Email-адрес">
-                                                </div>
-                                            </div>
-                                            <!--Пользовательское соглашение-->
-                                            <div class="col-8 agreement">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck" checked>
-                                                    <label class="custom-control-label" for="customCheck">
-                                                        Принимаю условия <a href="#">обработки данных</a>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Кнопка для отправки формы -->
-                                        <div class="text-center mt-4">
-                                            <input type="button" id="send" name="send" class="feedback btn get_submit" value="Отправить">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -244,13 +187,10 @@
                             <input type="email" name="e-mail" class="form-control" id="email">
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck2" checked>
-                            <label class="custom-control-label" for="customCheck2">
-                                Принимаю условия <a href="#">обработки данных</a>
-                            </label>
-                        </div>
+                    <div class="col-12 agreement">
+                       <label class="checkbox">
+                            <input type="checkbox" value="да" name="checkbox"> Принимаю условия <a href="#">обработки данных</a>
+                        </label>
                     </div>
                     <div class="col-12 get_order">
                         <input type="button" id="send" name="send" class="feedback btn get_order_btn" value="Заказать">
@@ -290,7 +230,7 @@
                         <br><br>Для сбора уникального фото материала использовались услуги штатного фотографа. А также были наданы услуги по заполнению сайта. 
                         <br><br>Сайт разработан на Framework Laravel, это дало возможность подключить удобною и понятною для пользователя административною панель.
                     </p>
-                    <p class="eva_btns"><a href="#" class="eva_info_btn1" data-toggle="modal" data-target="#exampleModalCenter">Заказать консультацию</a></p>
+                    <p class="eva_btns"><button class="eva_info_btn1 modal_btn">Заказать консультацию</button></p>
                     <p class="eva_btns"><a href="#" class="eva_info_btn">Посмотреть сайт</a></p>
                 </div>
             </div>
@@ -311,7 +251,7 @@
                         <br><br>Для сбора уникального фотоматериала проведена закупка фотографий на фото-стоках и надана услуга частичного наполнения. 
                         <br><br>Сайт разработан на Framework Laravel. Подключена удобна и понятна административною панель, разработанная именно для данного сайта.
                     </p>
-                    <p class="big_btns"><a href="#" class="big_info_btn1" data-toggle="modal" data-target="#exampleModalCenter">Заказать консультацию</a></p>
+                    <p class="big_btns"><button class="big_info_btn1 modal_btn">Заказать консультацию</button></p>
                     <p class="big_btns"><a href="#" class="big_info_btn">Посмотреть сайт</a></p>
                 </div>
             </div>
@@ -332,7 +272,7 @@
                         <br><br>Для сбора уникального фото материала использовались услуги штатного фотографа. А также были наданы услуги по заполнению сайта. 
                         <br><br>Сайт разработан на Framework Laravel, это дало возможность подключить удобною и понятною для пользователя административною панель.
                     </p>
-                    <p class="souldent_btns"><a href="#" class="souldent_info_btn1" data-toggle="modal" data-target="#exampleModalCenter">Заказать консультацию</a></p>
+                    <p class="souldent_btns"><button class="souldent_info_btn1 modal_btn">Заказать консультацию</button></p>
                     <p class="souldent_btns"><a href="#" class="souldent_info_btn">Посмотреть сайт</a></p>
                 </div>
             </div>
@@ -353,7 +293,7 @@
                         <br><br>Весь фотоматериал был предоставлен заказчиком. 
                         <br><br>Сайт имеет удобною административною панель и разработан на Framework Laravel.
                     </p>
-                    <p class="velobum_btns"><a href="#" class="velobum_info_btn1" data-toggle="modal" data-target="#exampleModalCenter">Заказать консультацию</a></p>
+                    <p class="velobum_btns"><button class="velobum_info_btn1 modal_btn">Заказать консультацию</button></p>
                     <p class="velobum_btns"><a href="#" class="velobum_info_btn">Посмотреть сайт</a></p>
                 </div>
             </div>
@@ -374,7 +314,7 @@
                         <br><br>Все фотоматериал, который использовался для роботы над сайтом, создан штатным фотографом. 
                         <br><br>Сайт имеет удобною административною панель и создан на Framework Laravel.
                     </p>
-                    <p class="propolex_btns"><a href="#" class="propolex_info_btn1" data-toggle="modal" data-target="#exampleModalCenter">Заказать консультацию</a></p>
+                    <p class="propolex_btns"><button class="propolex_info_btn1 modal_btn">Заказать консультацию</button></p>
                     <p class="propolex_btns"><a href="#" class="propolex_info_btn">Посмотреть сайт</a></p>
                 </div>
             </div>
@@ -420,13 +360,10 @@
                             <input type="text" name="text" class="form-control" id="text" size="2">
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="checkbox" class="custom-control-input" id="customCheck3" checked>
-                            <label class="custom-control-label" for="customCheck3">
-                                Принимаю условия <a href="#">обработки данных</a>
-                            </label>
-                        </div>
+                    <div class="col-12 agreement">
+                        <label class="checkbox">
+                            <input type="checkbox" value="да" name="checkbox"> Принимаю условия <a href="#">обработки данных</a>
+                        </label>
                     </div>
                     <div class="col-12 get_faq">
                         <input class="get_faq_btn feedback" type="button" id="send" name="send" value="Отправить">
@@ -541,14 +478,14 @@
             </div>
             <div class="row">
                 <div class="col-md-3 col-12 get_price">
-                    <a href="#" class="get_price_btn" data-toggle="modal" data-target="#exampleModalCenter">
+                    <button class="get_price_btn modal_btn">
                         Заказать
-                    </a>
+                    </button>
                 </div>
                 <div class="col-md-4 col-12 get_consultation">
-                    <a href="#" class="get_consultation_btn" data-toggle="modal" data-target="#exampleModalCenter">
+                    <button class="get_consultation_btn modal_btn" data-toggle="modal" data-target="#exampleModalCenter">
                         Получить консультацию
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -562,7 +499,7 @@
             <div class="row justify-content-center dsc_block">
                 <div class="col-md-7 col-12 dsc_card">
                     <h2>
-                        Закажи <span>сайт визитку</span> прямо<br>сейчас и <span>получи скидку 1500 грн.</span>
+                        Закажи <span>сайт визитку</span> прямо сейчас и <span>получи скидку 1500 грн.</span>
                     </h2>
                     <div class="row">
                         <div class="col-md-7 col-12 sale_form">
@@ -657,6 +594,55 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="mymodal_dialog" style="display:none;">
+        <div class="box-modal" id="small-modal">
+            <div class="modal-close arcticmodal-close"><i class="fas fa-times"></i></div>
+            <div class="modal-content-box">
+                <form action="" method="get" name="form-001" id="feedbackForm">
+                    <div class="form-row justify-content-center">
+                        <div class="col-10 text-center">
+                            <h1>
+                                Получить бесплатною консультацию
+                            </h1>
+                        </div>
+                        <!-- Имя -->
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label for="name" class="control-label">Ваше имя</label>
+                                <input id="name" type="text" name="name" class="form-control" value="" placeholder="Имя" minlength="2" maxlength="30" required="required">
+                            </div>
+                        </div>
+                        <!-- Телефон -->
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label for="phone" class="control-label">Ваш телефон</label>
+                                <input id="phone" type="text" name="tell" class="form-control" value="" placeholder="Телефон" minlength="2" maxlength="30" required="required">
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label for="email" class="control-label">Ваш e-mail</label>
+                                <input id="email" type="email" name="e-mail" required="required" class="form-control" value="" placeholder="Email-адрес">
+                            </div>
+                        </div>
+                        <!--Пользовательское соглашение-->
+                        <div class="col-8 agreement">
+                            <label class="checkbox">
+                                <input type="checkbox" value="да" name="checkbox"> Принимаю условия <a href="#">обработки данных</a>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Кнопка для отправки формы -->
+                    <div class="text-center mt-4 send_btn">
+                        <input type="button" id="send" name="send" class="feedback btn get_submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
         
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

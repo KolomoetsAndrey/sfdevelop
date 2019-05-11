@@ -48,6 +48,15 @@ $form['form-001'] = array(
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 			)
 		),
+		'checkbox' => array(
+			'title' => 'Checkbox',
+			'validate' => array(
+				'minlength' => '1',
+			),
+			'messages' => array(
+				'minlength' => '[ %1$s ] необходимо установить',
+			)
+		),
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',
@@ -65,7 +74,7 @@ $form['form-001'] = array(
 		'tpl' => true,
 		'antispam' => 'email77',
 		'antispamjs' => 'address77',
-		'okay' => 'Вы запросили аудит сайта, мы его проведем и результаты предоставим Вам на электронную почту в течение 24 часов.',
+		'okay' => 'Спасибо! Ваше сообщение отправлено. Мы ответим Вам в течении 24 часов!',
 		'fuck' => 'Сообщение отправлено - ERROR',
 		'spam' => 'Cпам робот',
 		'notify' => 'color-modal-textbox',
@@ -111,6 +120,15 @@ $form['form-002'] = array(
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 			)
 		),
+		'checkbox' => array(
+			'title' => 'Checkbox',
+			'validate' => array(
+				'minlength' => '1',
+			),
+			'messages' => array(
+				'minlength' => '[ %1$s ] необходимо установить',
+			)
+		),
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',
@@ -128,7 +146,7 @@ $form['form-002'] = array(
 		'tpl' => true,
 		'antispam' => 'email77',
 		'antispamjs' => 'address77',
-		'okay' => 'Вы запросили аудит сайта, мы его проведем и результаты предоставим Вам на электронную почту в течение 24 часов.',
+		'okay' => 'Спасибо! Ваше сообщение отправлено. Мы ответим Вам в течении 24 часов!',
 		'fuck' => 'Сообщение отправлено - ERROR',
 		'spam' => 'Cпам робот',
 		'notify' => 'color-modal-textbox',
@@ -183,6 +201,15 @@ $form['form-003'] = array(
 				'minlength' => 'Данное поле необходимо заполнить',
 			)
 		),
+		'checkbox' => array(
+			'title' => 'Checkbox',
+			'validate' => array(
+				'minlength' => '1',
+			),
+			'messages' => array(
+				'minlength' => '[ %1$s ] необходимо установить',
+			)
+		),
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',
@@ -200,7 +227,7 @@ $form['form-003'] = array(
 		'tpl' => true,
 		'antispam' => 'email77',
 		'antispamjs' => 'address77',
-		'okay' => 'Вы запросили аудит сайта, мы его проведем и результаты предоставим Вам на электронную почту в течение 24 часов.',
+		'okay' => 'Спасибо! Ваше сообщение отправлено. Мы ответим Вам в течении 24 часов!',
 		'fuck' => 'Сообщение отправлено - ERROR',
 		'spam' => 'Cпам робот',
 		'notify' => 'color-modal-textbox',
@@ -209,7 +236,7 @@ $form['form-003'] = array(
 );
 
 /* Form on DSC Section -004 */
-$form['form-003'] = array(
+$form['form-004'] = array(
 	'fields' => array(
 		'name' => array(
 			'title' => 'Имя',
@@ -235,6 +262,15 @@ $form['form-003'] = array(
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
 			)
 		),
+		'checkbox' => array(
+			'title' => 'Checkbox',
+			'validate' => array(
+				'minlength' => '1',
+			),
+			'messages' => array(
+				'minlength' => '[ %1$s ] необходимо установить',
+			)
+		),
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',
@@ -252,7 +288,7 @@ $form['form-003'] = array(
 		'tpl' => true,
 		'antispam' => 'email77',
 		'antispamjs' => 'address77',
-		'okay' => 'Вы запросили аудит сайта, мы его проведем и результаты предоставим Вам на электронную почту в течение 24 часов.',
+		'okay' => 'Спасибо! Ваше сообщение отправлено. Мы ответим Вам в течении 24 часов!',
 		'fuck' => 'Сообщение отправлено - ERROR',
 		'spam' => 'Cпам робот',
 		'notify' => 'color-modal-textbox',
