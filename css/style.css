@@ -15,8 +15,11 @@ button:active,
 button:focus {
   outline: 0;
 }
-.custom-control-label {
-  font-size: 18px;
+.checkbox {
+  font-size: 14px;
+}
+.openphone {
+  cursor: pointer;
 }
 .main {
   background-image: url(../images/main-bg.png);
@@ -49,6 +52,7 @@ button:focus {
   color: #FFFFFF;
   font-size: 16px;
   transition: all 0.2s;
+  cursor: pointer;
 }
 .main .phone .recall:hover {
   text-decoration: none;
@@ -175,6 +179,13 @@ button:focus {
   padding-bottom: 100px;
   margin-top: 150px;
 }
+.order a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.order a:hover {
+  color: #E27704;
+}
 .order .horline {
   width: 28%;
   border-top: 3px solid #E27704;
@@ -233,8 +244,8 @@ button:focus {
 }
 .works .eva_img img {
   height: 100%;
-  width: auto;
-  margin-top: -150px;
+  width: 50%;
+  margin-top: 20px;
 }
 .works .eva_info {
   margin-top: -700px;
@@ -247,6 +258,7 @@ button:focus {
   font-size: 150px;
   font-family: 'Nautilus Pompilius';
   color: #E2770499;
+  margin-left: -10px;
 }
 .works .eva_info h1 {
   font-size: 100px;
@@ -292,7 +304,7 @@ button:focus {
 }
 .works .big_img img {
   height: 100%;
-  width: auto;
+  width: 50%;
   margin-top: -200px;
 }
 .works .big_info {
@@ -306,6 +318,7 @@ button:focus {
   font-size: 150px;
   font-family: 'Nautilus Pompilius';
   color: #E2770499;
+  margin-left: -10px;
 }
 .works .big_info h1 {
   font-size: 100px;
@@ -351,7 +364,7 @@ button:focus {
 }
 .works .souldent_img img {
   height: 100%;
-  width: auto;
+  width: 50%;
   margin-top: -200px;
 }
 .works .souldent_info {
@@ -365,6 +378,7 @@ button:focus {
   font-size: 150px;
   font-family: 'Nautilus Pompilius';
   color: #E2770499;
+  margin-left: -10px;
 }
 .works .souldent_info h1 {
   font-size: 100px;
@@ -410,7 +424,7 @@ button:focus {
 }
 .works .velobum_img img {
   height: 100%;
-  width: auto;
+  width: 50%;
   margin-top: -200px;
 }
 .works .velobum_info {
@@ -424,6 +438,7 @@ button:focus {
   font-size: 150px;
   font-family: 'Nautilus Pompilius';
   color: #E2770499;
+  margin-left: -10px;
 }
 .works .velobum_info h1 {
   font-size: 100px;
@@ -469,7 +484,7 @@ button:focus {
 }
 .works .propolex_img img {
   height: 100%;
-  width: auto;
+  width: 50%;
   margin-top: -200px;
 }
 .works .propolex_info {
@@ -483,6 +498,7 @@ button:focus {
   font-size: 150px;
   font-family: 'Nautilus Pompilius';
   color: #E2770499;
+  margin-left: -10px;
 }
 .works .propolex_info h1 {
   font-size: 100px;
@@ -531,6 +547,13 @@ button:focus {
   padding-bottom: 100px;
   margin-top: 200px;
 }
+.faq a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.faq a:hover {
+  color: #E27704;
+}
 .faq .horline {
   width: 28%;
   border-top: 3px solid #E27704;
@@ -577,6 +600,15 @@ button:focus {
 .howworks .step img {
   width: 100%;
   max-width: 127px;
+}
+.howworks .step a {
+  color: #E27704;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.howworks .step a:hover {
+  text-decoration: underline;
+  color: #E27704;
 }
 .howworks .step .hw_text {
   padding: 0;
@@ -654,23 +686,25 @@ button:focus {
   transform: rotate(-15deg);
 }
 .price .get_price .get_price_btn {
-  padding: 15px 60px;
+  padding: 15px 0;
+  width: 100%;
   background-image: linear-gradient(to top, #E27704 0%, #FFC281 100%);
   border-radius: 16px;
   border: none;
   color: #FFFFFF;
-  font-size: 22px;
+  font-size: 20px;
   box-shadow: 3px 3px 6px #0000001a;
 }
 .price .get_price .get_price_btn:hover {
   text-decoration: none;
 }
 .price .get_consultation .get_consultation_btn {
-  padding: 15px 60px;
+  padding: 15px 0;
+  width: 100%;
   color: #E27704;
   border-radius: 16px;
   border: 1px solid #E27704;
-  font-size: 22px;
+  font-size: 20px;
   box-shadow: 3px 3px 6px #0000001a;
   background: #FFFFFF;
 }
@@ -689,9 +723,16 @@ button:focus {
   background-size: cover;
   height: 830px;
 }
+.dsc a {
+  color: #000000;
+  text-decoration: underline;
+}
+.dsc a:hover {
+  color: #E27704;
+}
 .dsc .dsc_card {
   padding: 50px;
-  border-radius: 25px;
+  border-radius: 70px;
   background: #FFFFFF;
 }
 .dsc .dsc_card h2 {
@@ -714,7 +755,8 @@ button:focus {
   border-radius: 16px;
   border: none;
   color: #FFFFFF;
-  font-size: 22px;
+  font-size: 20px;
+  margin-top: 25px;
 }
 .dsc .get_dsc_btn:hover {
   text-decoration: none;
